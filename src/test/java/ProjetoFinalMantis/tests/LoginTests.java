@@ -1,0 +1,29 @@
+package ProjetoFinalMantis.tests;
+
+import static org.junit.Assert.assertTrue;
+
+import ProjetoFinalMantis.bases.TestBase;
+import ProjetoFinalMantis.pages.LoginPage;
+import org.junit.Test;
+
+/**
+ * Unit test for simple App.
+ */
+public class LoginTests extends TestBase
+{
+    LoginPage loginPage;
+
+    @Test
+    public void efetuarLoginComSucesso()
+    {
+        LoginPage loginPage = new LoginPage(driver);
+
+        String usuario = "julio.rodrigues";
+        String senha = "Edson@1408";
+
+        loginPage.acessarTelaLogin();
+        loginPage.preencherUsuario(usuario);
+        loginPage.preencherPassword(senha);
+        loginPage.cliclarEmLogar();
+    }
+}
