@@ -17,6 +17,10 @@ public class LoginPage {
         this.driver = driver;
     }
 
+    public LoginPage() {
+
+    }
+
     public void acessarTelaLogin(){
         driver.get(urlPaginaLogin);
     }

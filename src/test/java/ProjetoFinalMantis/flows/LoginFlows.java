@@ -1,23 +1,21 @@
-package ProjetoFinalMantis.tests;
+package ProjetoFinalMantis.flows;
 
-import static org.junit.Assert.assertTrue;
-
-import ProjetoFinalMantis.bases.TestBase;
 import ProjetoFinalMantis.pages.LoginPage;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-/**
- * Unit test for simple App.
- */
-public class LoginTests extends TestBase
-{
+import static ProjetoFinalMantis.bases.TestBase.driver;
+
+public class LoginFlows  {
+
+
     LoginPage loginPage;
+    //LoginTests loginTests;
 
+    public LoginFlows(WebDriver driver){
+        loginPage = new LoginPage();
+    }
 
-    @Test
-    public void efetuarLoginComSucesso()
-    {
+    public void efetuarLoginFlows(){
         LoginPage loginPage = new LoginPage(driver);
 
         String usuario = "julio.rodrigues";
