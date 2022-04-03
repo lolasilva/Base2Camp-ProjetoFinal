@@ -24,7 +24,7 @@ public class LoginTests extends TestBase
 
         String usuario = "julio.rodrigues";
         String senha = "1408@1408";
-        String validarLogin = "Minha Visão";
+
 
         loginPage.acessarTelaLogin();
         loginPage.preencherUsuario(usuario);
