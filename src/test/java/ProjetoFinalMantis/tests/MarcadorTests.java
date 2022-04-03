@@ -9,9 +9,8 @@ import org.junit.Test;
 public class MarcadorTests  extends TestBase {
 
     MarcadorPage marcadorPage;
-    //LoginTests loginTests;
     LoginFlows loginFlows;
-    //LoginPage loginPage;
+
 
     @Test
     public void criarMarcadorComSucesso(){

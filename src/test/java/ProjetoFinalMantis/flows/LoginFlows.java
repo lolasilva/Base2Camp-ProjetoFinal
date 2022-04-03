@@ -9,7 +9,7 @@ public class LoginFlows  {
 
 
     LoginPage loginPage;
-    //LoginTests loginTests;
+
 
     public LoginFlows(WebDriver driver){
         loginPage = new LoginPage();

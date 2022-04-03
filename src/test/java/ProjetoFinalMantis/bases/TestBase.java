@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TestBase {
 
     public static WebDriver driver;
-    LoginTests loginTests;
+
 
     @BeforeClass
     public static void start(){

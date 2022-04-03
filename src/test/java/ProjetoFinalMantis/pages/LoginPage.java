@@ -1,15 +1,18 @@
 package ProjetoFinalMantis.pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginPage {
 
     WebDriver driver;
     String urlPaginaLogin = "https://mantis-prova.base2.com.br/";
-    By usernameField = By.xpath("/html/body/div[3]/form/table/tbody/tr[2]/td[2]/input");
-    By passwordField = By.xpath("/html/body/div[3]/form/table/tbody/tr[3]/td[2]/input");
+    By usernameField = By.name("username");
+    By passwordField = By.name("password");
     By loginButton = By.xpath("/html/body/div[3]/form/table/tbody/tr[6]/td/input");
+    By validarLogin = By.xpath("/html/body/table[1]/tbody/tr/td[1]/span[1]");
 
 
 
@@ -26,6 +29,7 @@ public class LoginPage {
     }
 
     public void preencherUsuario(String usuario){
+
         driver.findElement(usernameField).sendKeys(usuario);
     }
 
@@ -36,5 +40,14 @@ public class LoginPage {
     public void cliclarEmLogar(){
         driver.findElement(loginButton).click();
     }
+
+    public void validarLoginComSucesso(String validar){
+        String resultado_atual = driver.findElement(validarLogin).getText();
+        Assert.assertEquals(validar, resultado_atual);
+
+
+    }
+
+
 
 }
