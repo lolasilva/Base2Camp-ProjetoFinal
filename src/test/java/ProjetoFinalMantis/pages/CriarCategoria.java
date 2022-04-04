@@ -9,7 +9,7 @@ public class CriarCategoria extends TestBase {
     By gerenciarButton = By.xpath("/html/body/table[2]/tbody/tr/td[1]/a[7]");
     By gerenciarProjetoButton = By.xpath("/html/body/div[2]/p/span[1]/a");
     By adicinarCategoriaField = By.name("name");
-    By adicinarCategoriaButton = By.xpath("/html/body/a/div/table/tbody/tr[44]/td/form/input[4]");
+    By adicinarCategoriaButton = By.xpath("/html/body/a/div/table/tbody/tr[46]/td/form/input[4]");
 
 
     public CriarCategoria(WebDriver driver) {

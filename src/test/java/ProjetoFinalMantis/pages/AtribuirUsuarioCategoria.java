@@ -9,7 +9,7 @@ public class AtribuirUsuarioCategoria extends TestBase {
     By gerenciarButton = By.xpath("/html/body/table[2]/tbody/tr/td[1]/a[7]");
     By gerenciarProjetoButton = By.xpath("/html/body/div[2]/p/span[1]/a");
     By alterarButton = By.xpath("/html/body/a/div/table/tbody/tr[16]/td[3]/form[1]/input[2]");
-    By selecionarUsuarioInput = By.xpath("/html/body/div[3]/form/table/tbody/tr[3]/td[2]/select/option[74]");
+    By selecionarUsuarioCambobox = By.xpath("/html/body/div[3]/form/table/tbody/tr[3]/td[2]/select/option[74]");
     By atualizarCategoriaButton = By.xpath("/html/body/div[3]/form/table/tbody/tr[4]/td[2]/input");
 
     public AtribuirUsuarioCategoria(WebDriver driver) {
@@ -29,7 +29,7 @@ public class AtribuirUsuarioCategoria extends TestBase {
     }
 
     public void selecionarUsuario(){
-        driver.findElement(selecionarUsuarioInput).click();
+        driver.findElement(selecionarUsuarioCambobox).click();
     }
 
     public void atualizarCategoria(){

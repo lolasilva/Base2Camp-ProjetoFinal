@@ -1,13 +1,14 @@
 package ProjetoFinalMantis.pages;
 
+import ProjetoFinalMantis.bases.TestBase;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginPage {
+public class LoginPage extends TestBase {
 
-    WebDriver driver;
+
     String urlPaginaLogin = "https://mantis-prova.base2.com.br/";
     By usernameField = By.name("username");
     By passwordField = By.name("password");

@@ -16,7 +16,7 @@ public class CriarCategoriaTests extends TestBase {
         LoginFlows loginFlows = new LoginFlows(driver);
         CriarCategoria criarCategoria = new CriarCategoria(driver);
 
-        String categoria = "Julio.Rodrigues Teste";
+        String categoria = "Julio Teste";
 
         loginFlows.efetuarLoginFlows();
         criarCategoria.clicarEmGerenciar();
