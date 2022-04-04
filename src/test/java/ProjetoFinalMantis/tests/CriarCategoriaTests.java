@@ -4,9 +4,8 @@ import ProjetoFinalMantis.bases.TestBase;
 import ProjetoFinalMantis.flows.LoginFlows;
 import ProjetoFinalMantis.pages.CriarCategoria;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 
-public class AdicionarCategoria extends TestBase {
+public class CriarCategoriaTests extends TestBase {
 
     CriarCategoria criarCategoria;
     LoginFlows loginFlows;
